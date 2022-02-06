@@ -1,27 +1,27 @@
-# moza_handunit
+# MOZA HANDUNIT
 SPI protocol used in the NRF24L01 of the MOZA iFocus Handunit 
 
-Using a handunit and a logic analyzer I found the next SPI commands sent to the NRF24L01 that may enable future comunication with the moza iFocus motors.
+Using a handunit and a logic analyzer I found the next SPI commands sent to the NRF24L01 that may enable future comunication with the moza iFocus motors. 
 
-at the Start of the power on the controller sent
+at the Start of the power on the controller sent 
 
 0x2A receive data address pipe 0 
-0x34
-0x43
-0x10
-0x10
-0x10
-
-then
-
-0x0A read receive data addres pipe 0
-nrf sent 0x34
-nrf sent 0x43
-nrf sent 0x10 
-nrf sent 0x10 
-nrf sent 0x10 
-
-then
+0x34 
+0x43 
+0x10 
+0x10 
+0x10 
+ 
+then 
+ 
+0x0A read receive data addres pipe 0 
+nrf sent 0x34 
+nrf sent 0x43 
+nrf sent 0x10  
+nrf sent 0x10  
+nrf sent 0x10  
+ 
+then 
 
 0x2A writes again receive data address pipe 0 for some reason
 0x34 
